@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* メニューのスタイル */
+        .menu {
+            display: none; /* 初期状態では非表示 */
+            position: absolute; /* 絶対位置 */
+            top: 60px; /* ヘッダーの下 */
+            right: 20px; /* 右寄せ */
+            background-color: #f9f9f9; /* 背景色 */
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* 影の設定 */
+            z-index: 1; /* メニューを最前面に表示 */
+        }
+
+        /* メニュー項目のスタイル */
+        .menu a {
+            color: black; /* テキストの色 */
+            padding: 12px 16px; /* パディング */
+            text-decoration: none; /* 下線を消す */
+            display: block; /* ブロック要素にする */
+        }
+
+        /* メニュー項目のホバースタイル */
+        .menu a:hover {
+            background-color: #f1f1f1; /* ホバー時の背景色 */
+        }
+    </style>
+   
+</head>
+<body>
+    <header>
+        <h1>構築 紹介</h1>
+        <!-- メニューボタン -->
+        <div class="menu-toggle" onclick="toggleMenu()">Menu</div>
+        <!-- プルダウンメニュー -->
+        <div class="menu" id="dropdown-menu">
+            <a href="https://yakkun.com">ポケモン徹底攻略</a>
+            <a href="https://sv.pokesol.com/calc">ダメージ計算SV</a>
+            <a href="https://bulbagarden.net/home/">bulbagarden</a>
+        </div>
+        
+        <!-- PNG画像の埋め込み -->
+        <img src="images/regG.jpg" alt="Example PNG Image" width="600" height="300">
+    </header>
+    <main>
+
+        
+        <main>
+        <div class="pokemon-section">
+        <img src="images/HOME1024S 2.png" alt="Example PNG Image" width="200" height="200" style="float: left; margin-right: 20px;">
+        <img src="images/StellarIC_SV.png" alt="Example PNG Image" width="100" height="25" style="float: left; margin-right: 20px;">
+        <h3 style="clear: both;"><a href="https://yakkun.com/sv/zukan/n1021">テラパゴス</a> @たべのこし</h3>
+        <p>ひかえめ 244-*-4-252-4-4</p>
+        <p>テラスタル 201-*-131-172-131-106</p>
+        <p>ステラ 266-*-131-200-131-106</p>
+        <p>テラクラスター トライアタック めいそう まもる</p>
+
+        <img src="images/HOME0727.png" alt="Example PNG Image" width="200" height="200" style="float: left; margin-right: 20px;">
+        <img src="images/GrassIC_SV.png" alt="Example PNG Image" width="100" height="25" style="float: left; margin-right: 20px;">
+        <h3 style="clear: both;"><a href="https://yakkun.com/sv/zukan/n727">ガオガエン</a> @ヨプのみ</h3>
+        <p>わんぱく 44-0-180-*-76-0</p>
+        <p>201-135-146-*-120-80</p>
+        <p>フレアドライブ ねこだまし すてぜりふ てだすけ</p>
+
+        <img src="images/HOME0812.png" alt="Example PNG Image" width="200" height="200" style="float: left; margin-right: 20px;">
+        <img src="images/FireIC_SV.png" alt="Example PNG Image" width="100" height="25" style="float: left; margin-right: 20px;">
+        <h3 style="clear: both;"><a href="https://yakkun.com/sv/zukan/n812">ゴリランダー</a> @とつげきチョッキ</h3>
+        <p>いじっぱり 252-252-4-*-0-0</p>
+        <p>207-194-111-*-90-105</p>
+        <p>ウッドハンマー グラススライダー ねこだまし とんぼがえり</p>
+
+        <img src="images/HOME0892R.png" alt="Example PNG Image" width="200" height="200" style="float: left; margin-right: 20px;">
+        <img src="images/WaterIC_SV.png" alt="Example PNG Image" width="100" height="25" style="float: left; margin-right: 20px;">
+
+        <h3 style="clear: both;"><a href="https://yakkun.com/sv/zukan/n892r">ウーラオス</a> @こだわりスカーフ</h3>
+        <p>いじっぱり 76-252-12-*-4-164</p>
+        <p>185-200-122-*-81-138</p>
+        <p>すいりゅうれんだ インファイト アイススピナー とんぼがえり</p>
+
+        <img src="images/HOME0125.png" alt="Example PNG Image" width="200" height="200" style="float: left; margin-right: 20px;">
+        <img src="images/GhostIC_SV.png" alt="Example PNG Image" width="100" height="25" style="float: left; margin-right: 20px;">
+
+        <h3 style="clear: both;"><a href="https://yakkun.com/sv/zukan/n125">エレブー</a> @しんかのきせき</h3>
+        <p>ずぶとい 252-*-180-0-76-0</p>
+        <p>172-92-110-115-115-125</p>
+        <p>ボルトチェンジ フェイント このゆびとまれ ちょうはつ</p>
+
+        <img src="images/HOME0778.png" alt="Example PNG Image" width="200" height="200" style="float: left; margin-right: 20px;">
+        <img src="images/NormalIC_SV.png" alt="Example PNG Image" width="100" height="25" style="float: left; margin-right: 20px;">
+  
+        <h3 style="clear: both;"><a href="https://yakkun.com/sv/zukan/n778">ミミッキュ</a> @ぼうじんゴーグル</h3>
+        <p>いじっぱり 164-252-84-*-4-4</p>
+        <p>151-156-111-*-126-117</p>
+        <p>じゃれつく ちょうはつ おにび トリックルーム</p>
+   
+                              
+    </main>
+    <footer>
+        <p>© 2024 My First Website</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

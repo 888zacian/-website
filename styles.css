@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif; /* フォントをArialに設定 */
+    margin: 0; /* ページの余白をゼロに設定 */
+    padding: 0; /* ページのパディングをゼロに設定 */
+    background-color: #f4f4f4; /* 背景色を淡いグレーに設定 */
+}
+
+header {
+    background-color: #2497ee; /* ヘッダーの背景色をダークグレーに設定 */
+    color: #fff; /* ヘッダーのテキスト色を白に設定 */
+    padding: 1em 0; /* ヘッダーの上下のパディングを設定 */
+    text-align: center; /* テキストを中央揃えに設定 */
+}
+
+main {
+    padding: 1em; /* メインコンテンツのパディングを設定 */
+    margin-bottom: 100px; /* フッターの高さよりも大きなマージンを追加 */
+}
+
+footer {
+    background-color: #333; /* フッターの背景色をダークグレーに設定 */
+    color: #fff; /* フッターのテキスト色を白に設定 */
+    text-align: center; /* テキストを中央揃えに設定 */
+    padding: 1em 0; /* フッターの上下のパディングを設定 */
+    position: fixed; /* フッターを固定位置に設定 */
+    width: 100%; /* フッターの幅を100%に設定 */
+    bottom: 0; /* フッターをページの下部に配置 */
+}
+img {
+   
+    border-radius: 8px; /* 角を丸くする */
+
+    display: block; /* 画像をブロックレベル要素に変更 */
+    margin: 0 auto; /* 画像を中央揃え */
+    
+}
+
+/* メニューボタンのスタイル */
+.menu-toggle {
+    cursor: pointer; /* ポインターを指定 */
+    position: absolute; /* 絶対位置 */
+    top: 20px; /* ヘッダーの上 */
+    right: 20px; /* 右寄せ */
+    background-color: #333; /* 背景色 */
+    color: white; /* テキストの色 */
+    padding: 10px 20px; /* パディング */
+    border: none; /* ボーダーをなしにする */
+    border-radius: 4px; /* 角丸にする */
+    z-index: 2; /* ボタンを最前面に表示 */
+}
+
+/* メニューボタンのホバースタイル */
+.menu-toggle:hover {
+    background-color: #555; /* ホバー時の背景色 */
+}
+
+/* プルダウンメニューのスタイル */
+.menu {
+    display: none; /* 初期状態では非表示 */
+    position: absolute; /* 絶対位置 */
+    top: 60px; /* ヘッダーの下 */
+    right: 20px; /* 右寄せ */
+    background-color: #f9f9f9; /* 背景色 */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* 影の設定 */
+    z-index: 1; /* メニューを最前面に表示 */
+}
+
+/* メニュー項目のスタイル */
+.menu a {
+    color: black; /* テキストの色 */
+    padding: 12px 16px; /* パディング */
+    text-decoration: none; /* 下線を消す */
+    display: block; /* ブロック要素にする */
+}
+
+/* メニュー項目のホバースタイル */
+.menu a:hover {
+    background-color: #f1f1f1; /* ホバー時の背景色 */
+}
+/* スクロールトップボタンのスタイル */
+#scrollToTop {
+    display: none; /* 初期状態では非表示 */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
